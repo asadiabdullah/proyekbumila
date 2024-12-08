@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Pembelajaran Anak SD</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <!-- Beranda -->
+        <section id="beranda">
+            <h1>TANTANGAN ATAU JAWABAN</h1>
+            <button id="startQuiz">Mulai</button>
+        </section>
+        
+        <!-- Sesi -->
+        <section id="sesi" style="display:none;">
+            <h2 id="pertanyaan"></h2>
+            <div id="pilihan">
+                <button class="option" data-index="0"></button>
+                <button class="option" data-index="1"></button>
+                <button class="option" data-index="2"></button>
+                <button class="option" data-index="3"></button>
+            </div>
+
+   <!-- Tombol Tantangan -->
+<button id="challengeBtn">Tantangan</button>
+
+        </section>
+        
+        <!-- Nilai -->
+        <section id="nilai" style="display:none;">
+            <h1>Skor Kamu</h1>
+            <p id="totalSkor"></p>
+            <p id="rincianBenar"></p>
+            <p id="rincianSalah"></p>
+            <button onclick="location.reload()">Main Lagi</button>
+        </section>
+    </div>
+</body>
+</html>
